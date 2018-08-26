@@ -50,6 +50,17 @@ var linkable_clients = [
         maturity: "Stable",
         comments: "A static golang generated preview of public world readable Matrix rooms.",
     },
+    {
+        name: "Audius",
+        logo: "img/audius.logo48px.png",
+        author: "Falko Krause",
+        homepage: "https://github.com/select/audius",
+        // https://audius.rockdapus.org/?import=!vginOAdNcoiesrilGC:matrix.org&type=matrix&title=Music%20Links
+        room_url(alias) { return "https://audius.rockdapus.org/?&type=matrix&title="+alias.replace('#', '%23')+"&import=" + alias.replace('#', '%23') },
+        room_id_url(id) { return "https://audius.rockdapus.org/?&type=matrix&title="+alias.replace('#', '%23')+"&import=" + id },
+        maturity: "Stable",
+        comments: "A web based matrix client with a focus on streaming media.",
+    },
 ];
 
 var unlinkable_clients = [
