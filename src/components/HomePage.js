@@ -52,7 +52,7 @@ var linkable_clients = [
     },
     {
         name: "Audius",
-        logo: "img/audius.logo48px.png",
+        logo: "img/audius.logo48.png",
         author: "Falko Krause",
         homepage: "https://github.com/select/audius",
         // https://audius.rockdapus.org/?import=!vginOAdNcoiesrilGC:matrix.org&type=matrix&title=Music%20Links
